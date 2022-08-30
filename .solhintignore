@@ -1,0 +1,5 @@
+src/smart-contracts/node_modules/
+src/smart-contracts/scripts/
+src/smart-contracts/tests/
+src/smart-contracts/artifacts/
+src/smart-contracts/cache/
