@@ -8,6 +8,8 @@ contract Lock {
     uint256 public unlockTime;
     address payable public owner;
 
+    address private _private;
+
     event Withdrawal(uint256 amount, uint256 when);
 
     constructor(uint256 _unlockTime) payable {
