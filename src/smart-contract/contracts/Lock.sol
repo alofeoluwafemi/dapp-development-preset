@@ -2,7 +2,8 @@
 pragma solidity ^0.8.9;
 
 // Import this file to use console.log
-import "hardhat/console.sol";
+//slither-disable-next-line
+// import "hardhat/console.sol";
 
 contract Lock {
     uint256 public unlockTime;
