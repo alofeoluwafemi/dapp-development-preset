@@ -3,4 +3,4 @@
 
 npm run hardhat:lint
 npm run hardhat:prettier
-npm run hardhat:prettier
+npm run hardhat:test
