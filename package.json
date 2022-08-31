@@ -1,29 +1,28 @@
 {
-  "name": "project-setup-demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "lint-sol": "./node_modules/.bin/solhint src/smart-contract/contracts/*.sol",
-    "format": "./node_modules/.bin/prettier --write .",
-    "prepare": "husky install",
-    "delpoy:local": "yarn workspace smart-contract deploy:local",
-    "deploy": "yarn workspace smart-contract deploy",
-    "test": "yarn workspace smart-contract test"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "husky": "^8.0.1",
-    "prettier": "^2.7.1",
-    "prettier-plugin-solidity": "^1.0.0-beta.24",
-    "solhint": "^3.3.7",
-    "solhint-plugin-prettier": "^0.0.5"
-  },
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "src/*"
-    ]
-  }
+    "name": "project-setup-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "hardhat:lint": "yarn workspace smart-contract sollint:solidity",
+        "hardhat:prettier": "yarn workspace smart-contract prettier:solidity",
+        "prepare": "husky install",
+        "hardhat:delpoy-local": "yarn workspace smart-contract deploy:local",
+        "hardhat:test": "yarn workspace smart-contract test"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "husky": "^8.0.1",
+        "prettier": "^2.7.1",
+        "prettier-plugin-solidity": "^1.0.0-beta.24",
+        "solhint": "^3.3.7",
+        "solhint-plugin-prettier": "^0.0.5"
+    },
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "src/*"
+        ]
+    }
 }

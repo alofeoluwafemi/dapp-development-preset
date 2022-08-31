@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "sollint:solidity": "../../node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "prettier:solidity": "../../node_modules/.bin/prettier --write contracts/**/*.sol --config ../../prettierrc.json"
   },
   "author": "",
   "license": "ISC",
